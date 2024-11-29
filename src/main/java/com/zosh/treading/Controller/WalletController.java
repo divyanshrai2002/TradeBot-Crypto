@@ -4,6 +4,7 @@ import com.zosh.treading.model.Order;
 import com.zosh.treading.model.User;
 import com.zosh.treading.model.Wallet;
 import com.zosh.treading.model.WalletTransaction;
+import com.zosh.treading.service.OrderService;
 import com.zosh.treading.service.UserService;
 import com.zosh.treading.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,9 @@ public class WalletController {
     private WalletService walletService;
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private OrderService orderService;
 
     @GetMapping("/api/wallet")
     public ResponseEntity<Wallet> getUserWallet(@RequestHeader("Authorization") String jwt) throws Exception {
