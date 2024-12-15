@@ -6,12 +6,14 @@ import com.zosh.treading.model.*;
 import com.zosh.treading.repository.OrderItemRepository;
 import com.zosh.treading.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class OrderServiceImpl  implements OrderService{
     @Autowired
     private OrderRepository orderRepository;

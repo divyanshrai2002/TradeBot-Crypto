@@ -7,12 +7,14 @@ import com.zosh.treading.repository.WithdrawalRepository;
 import com.zosh.treading.response.WithdrawalService;
 import lombok.With;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class WithdrawalServiceImpl implements WithdrawalService {
 
     @Autowired

@@ -34,7 +34,7 @@ public class WatchListController {
         return ResponseEntity.ok(watchList);
     }
 
-    @GetMapping("/{watchListId")
+    @GetMapping("/{watchListId}")
     public ResponseEntity<WatchList> getWatchListById(
             @PathVariable Long watchListId)throws  Exception{
         WatchList watchList=watchListService.findById(watchListId);
