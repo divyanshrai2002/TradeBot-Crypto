@@ -1,0 +1,1 @@
+TradeBot Crypto is a Java full-stack cryptocurrency trading platform powered by Spring Boot, React.js, and SQL. It allows users to easily buy and sell cryptocurrencies with real-time market data, advanced trading tools, and an AI-powered chatbot
